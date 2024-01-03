@@ -1,42 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
     <title>Karl Ducta - Portfolio</title>
 </head>
-<body class="bg-gray-100 font-sans">
+
+<body class="bg-gray-100 font-sans text-gray-900">
     {% load static %}
     <!-- Navigation -->
-    <nav class="bg-blue-500 p-4 text-white">
-        <div class="container mx-auto">
-            <span class="text-2xl font-bold">Karl Ducta</span>
-            <ul class="float-right">
-                <li class="px-6 inline-block text-2xl font-bold"><a href="#about" class="hover:text-gray-200">About</a></li>
-                <li class="px-6 inline-block text-2xl font-bold"><a href="#projects" class="hover:text-gray-200">Projects</a></li>
-                <li class="px-6 inline-block text-2xl font-bold"><a href="#contact" class="hover:text-gray-200">Contact</a></li>
+    <nav class="bg-gray-900 p-4 text-white">
+        <div class="container mx-auto flex justify-between items-center">
+            <div>
+                <span class="text-3xl font-bold">Karl Ducta</span>
+            </div>
+            <ul class="flex space-x-8">
+                <li class="text-xl font-bold"><a href="#about" class="hover:text-gray-200">About</a></li>
+                <li class="text-xl font-bold"><a href="#projects" class="hover:text-gray-200">Projects</a></li>
+                <li class="text-xl font-bold"><a href="#contact" class="hover:text-gray-200">Contact</a></li>
             </ul>
         </div>
     </nav>
 
     <!-- Introduction Section -->
     <section class="container mx-auto my-8 p-8 bg-white shadow-md rounded-lg">
-        <h1 class="text-4xl font-bold mb-4 text-gray-800">Hello, I'm Karl Ducta</h1>
-        <p class="text-gray-700 text-lg leading-relaxed">A passionate software engineer with a focus on creating efficient and scalable solutions. I have experience in...</p>
+        <h1 class="text-4xl font-bold mb-4">Hello, I'm Karl Ducta</h1>
+        <p class="text-lg leading-relaxed">A passionate software engineer with a focus on creating efficient and scalable solutions. I have experience in...</p>
     </section>
 
     <!-- About Section -->
     <section id="about" class="container mx-auto my-8 p-8 bg-white shadow-md rounded-lg">
-        <h1 class="text-4xl font-bold mb-4 text-gray-800">About Me</h1>
-        <p class="text-gray-700 text-lg leading-relaxed">Hello, I'm Karl Ducta, a passionate software engineer based in [Your Location]. I specialize in [Your Specialization], and I have a strong background in [Your Skills]. My journey in the world of programming started [Mention a brief history or interesting fact about your journey].</p>
-        <p class="text-gray-700 text-lg leading-relaxed">In addition to coding, I enjoy [Your Hobbies or Interests], and I am always eager to learn and explore new technologies. Feel free to connect with me on social media or through email. I'm open to collaboration and new opportunities.</p>
+        <h1 class="text-4xl font-bold mb-4">About Me</h1>
+        <p class="text-lg leading-relaxed">Hello, I'm Karl Ducta, a passionate software engineer based in [Your Location]. I specialize in [Your Specialization], and I have a strong background in [Your Skills]. My journey in the world of programming started [Mention a brief history or interesting fact about your journey].</p>
+        <p class="text-lg leading-relaxed">In addition to coding, I enjoy [Your Hobbies or Interests], and I am always eager to learn and explore new technologies. Feel free to connect with me on social media or through email. I'm open to collaboration and new opportunities.</p>
     </section>
 
     <!-- Projects Section -->
     <section id="projects" class="container mx-auto my-8 p-8 bg-white shadow-md rounded-lg">
-        <h1 class="text-4xl font-bold mb-8 text-gray-800">Projects</h1>
+        <h1 class="text-4xl font-bold mb-8">Projects</h1>
         <div class="grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
 
             <!-- Project 1 -->
@@ -47,8 +52,8 @@
                 <div class="p-6">
                     <h2 class="text-xl font-semibold mb-2">Project 1: Lift App</h2>
                     <p class="text-gray-700 mb-4">Description of the project. Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-                    <a href="https://github.com/karl0223/thesis-backend" class="text-blue-500 hover:underline">View on GitHub</a>
-                    <a href="https://willowy-faun-52aa80.netlify.app/?fbclid=IwAR1P7w28SNUsQi2E3Fh-oc6F0ujZVIkJlFNXsfYQmuza_wZU2ozMJ6a0EeQ#download" class="ml-6 text-blue-500 hover:underline">Website</a>
+                    <a href="https://github.com/karl0223/thesis-backend" class="text-gray-500 hover:underline">View on GitHub</a>
+                    <a href="https://willowy-faun-52aa80.netlify.app/?fbclid=IwAR1P7w28SNUsQi2E3Fh-oc6F0ujZVIkJlFNXsfYQmuza_wZU2ozMJ6a0EeQ#download" class="ml-6 text-gray-500 hover:underline">Website</a>
                 </div>
             </div>
 
@@ -60,8 +65,8 @@
                 <div class="p-6">
                     <h2 class="text-xl font-semibold mb-2">Project 2: Market Place</h2>
                     <p class="text-gray-700 mb-4">Description of the project. Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-                    <a href="https://github.com/karl0223/Market-Place" class="text-blue-500 hover:underline">View on GitHub</a>
-                    <a href="https://market-place-8hq1.onrender.com/" class="ml-6 text-blue-500 hover:underline">Website</a>
+                    <a href="https://github.com/karl0223/Market-Place" class="text-gray-500 hover:underline">View on GitHub</a>
+                    <a href="https://market-place-8hq1.onrender.com/" class="ml-6 text-gray-500 hover:underline">Website</a>
                 </div>
             </div>
 
@@ -73,8 +78,8 @@
                 <div class="p-6">
                     <h2 class="text-xl font-semibold mb-2">Project 3: Store API</h2>
                     <p class="text-gray-700 mb-4">Description of the project. Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-                    <a href="https://github.com/karl0223/Python-Django-Part-3" class="text-blue-500 hover:underline">View on GitHub</a>
-                    <a href="https://storefront-asnk.onrender.com/store/" class="ml-6 text-blue-500 hover:underline">Website</a>
+                    <a href="https://github.com/karl0223/Python-Django-Part-3" class="text-gray-500 hover:underline">View on GitHub</a>
+                    <a href="https://storefront-asnk.onrender.com/store/" class="ml-6 text-gray-500 hover:underline">Website</a>
                 </div>
             </div>
 
@@ -83,24 +88,48 @@
         </div>
     </section>
 
-
     <!-- Contact Section -->
-    <section id="contact" class="container mx-auto my-8 p-8 bg-white shadow-md rounded-lg">
-        <h1 class="text-4xl font-bold mb-4 text-gray-800">Contact Me</h1>
-        <p class="text-gray-700 text-lg leading-relaxed">Feel free to reach out to me for any inquiries, collaboration opportunities, or just to say hello! You can contact me through the following channels:</p>
-        <ul class="list-disc pl-6 mt-4">
-            <li>Email: your.email@example.com</li>
-            <li>LinkedIn: <a href="https://www.linkedin.com/in/yourusername" class="text-blue-500 hover:underline">linkedin.com/in/yourusername</a></li>
-            <li>Twitter: <a href="https://twitter.com/yourusername" class="text-blue-500 hover:underline">@yourusername</a></li>
+    <section id="contact" class="container mx-auto my-8 p-8 bg-white shadow-md rounded-lg text-center">
+        <h1 class="text-4xl font-bold mb-4">Contact Me</h1>
+        <p class="text-lg leading-relaxed">
+            Feel free to reach out to me for any inquiries, collaboration opportunities, or just to say hello! You can contact me through the following channels:
+        </p>
+        <ul class="list-none pl-0 flex justify-center gap-8">
+            <li class="m-2">
+                <a href="mailto:your.email@example.com" class="text-gray-900 hover:underline">
+                    <i class="fas fa-envelope fa-3x"></i>
+                </a>
+            </li>
+            <li class="m-2">
+                <a href="https://www.linkedin.com/in/yourusername" class="text-gray-900 hover:underline" target="_blank">
+                    <i class="fab fa-linkedin fa-3x"></i>
+                </a>
+            </li>
+            <li class="m-2">
+                <a href="https://twitter.com/yourusername" class="text-gray-900 hover:underline" target="_blank">
+                    <i class="fab fa-twitter fa-3x"></i>
+                </a>
+            </li>
+            <li class="m-2">
+                <a href="https://facebook.com/yourusername" class="text-gray-900 hover:underline" target="_blank">
+                    <i class="fab fa-facebook fa-3x"></i>
+                </a>
+            </li>
+            <li class="m-2">
+                <a href="https://github.com/yourusername" class="text-gray-900 hover:underline" target="_blank">
+                    <i class="fab fa-github fa-3x"></i>
+                </a>
+            </li>
         </ul>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-blue-500 p-4 text-white text-center">
+    <footer class="bg-gray-900 p-4 text-white text-center">
         <p>&copy; 2024 Karl Ducta. All rights reserved.</p>
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
 
 </body>
+
 </html>
