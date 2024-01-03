@@ -27,50 +27,72 @@
         <p class="text-gray-700 text-lg leading-relaxed">A passionate software engineer with a focus on creating efficient and scalable solutions. I have experience in...</p>
     </section>
 
+    <!-- About Section -->
+    <section id="about" class="container mx-auto my-8 p-8 bg-white shadow-md rounded-lg">
+        <h1 class="text-4xl font-bold mb-4 text-gray-800">About Me</h1>
+        <p class="text-gray-700 text-lg leading-relaxed">Hello, I'm Karl Ducta, a passionate software engineer based in [Your Location]. I specialize in [Your Specialization], and I have a strong background in [Your Skills]. My journey in the world of programming started [Mention a brief history or interesting fact about your journey].</p>
+        <p class="text-gray-700 text-lg leading-relaxed">In addition to coding, I enjoy [Your Hobbies or Interests], and I am always eager to learn and explore new technologies. Feel free to connect with me on social media or through email. I'm open to collaboration and new opportunities.</p>
+    </section>
+
     <!-- Projects Section -->
-    <section class="container mx-auto my-8 grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+    <section id="projects" class="container mx-auto my-8 p-8 bg-white shadow-md rounded-lg">
+        <h1 class="text-4xl font-bold mb-8 text-gray-800">Projects</h1>
+        <div class="grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
 
-        <!-- Project 1 -->
-        <div class="bg-white rounded-md overflow-hidden shadow-lg">
-            <a href="{% static 'liftapp.png' %}" data-lightbox="project1" data-title="Project 1: Lift App">
-                <img src="{% static 'liftapp.png' %}" alt="Project 1" class="w-full h-48 object-cover">
-            </a>
-            <div class="p-6">
-                <h2 class="text-xl font-semibold mb-2">Project 1: Lift App</h2>
-                <p class="text-gray-700 mb-4">Description of the project. Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-                <a href="https://github.com/karl0223/thesis-backend" class="text-blue-500 hover:underline">View on GitHub</a>
-                <a href="https://willowy-faun-52aa80.netlify.app/?fbclid=IwAR1P7w28SNUsQi2E3Fh-oc6F0ujZVIkJlFNXsfYQmuza_wZU2ozMJ6a0EeQ#download" class="ml-6 text-blue-500 hover:underline">Website</a>
+            <!-- Project 1 -->
+            <div class="project-container bg-white rounded-md overflow-hidden shadow-lg border border-gray-300">
+                <a href="{% static 'liftapp.png' %}" data-lightbox="project1" data-title="Project 1: Lift App">
+                    <img src="{% static 'liftapp.png' %}" alt="Project 1" class="w-full h-48 object-cover">
+                </a>
+                <div class="p-6">
+                    <h2 class="text-xl font-semibold mb-2">Project 1: Lift App</h2>
+                    <p class="text-gray-700 mb-4">Description of the project. Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                    <a href="https://github.com/karl0223/thesis-backend" class="text-blue-500 hover:underline">View on GitHub</a>
+                    <a href="https://willowy-faun-52aa80.netlify.app/?fbclid=IwAR1P7w28SNUsQi2E3Fh-oc6F0ujZVIkJlFNXsfYQmuza_wZU2ozMJ6a0EeQ#download" class="ml-6 text-blue-500 hover:underline">Website</a>
+                </div>
             </div>
-        </div>
 
-        <!-- Project 2 -->
-        <div class="bg-white rounded-md overflow-hidden shadow-lg">
-            <a href="{% static 'marketplace.png' %}" data-lightbox="project2" data-title="Project 2: Market Place">
-                <img src="{% static 'marketplace.png' %}" alt="Project 2" class="w-full h-48 object-cover">
-            </a>
-            <div class="p-6">
-                <h2 class="text-xl font-semibold mb-2">Project 2: Market Place</h2>
-                <p class="text-gray-700 mb-4">Description of the project. Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-                <a href="https://github.com/karl0223/Market-Place" class="text-blue-500 hover:underline">View on GitHub</a>
-                <a href="https://market-place-8hq1.onrender.com/" class="ml-6 text-blue-500 hover:underline">Website</a>
+            <!-- Project 2 -->
+            <div class="project-container bg-white rounded-md overflow-hidden shadow-lg border border-gray-300">
+                <a href="{% static 'marketplace.png' %}" data-lightbox="project2" data-title="Project 2: Market Place">
+                    <img src="{% static 'marketplace.png' %}" alt="Project 2" class="w-full h-48 object-cover">
+                </a>
+                <div class="p-6">
+                    <h2 class="text-xl font-semibold mb-2">Project 2: Market Place</h2>
+                    <p class="text-gray-700 mb-4">Description of the project. Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                    <a href="https://github.com/karl0223/Market-Place" class="text-blue-500 hover:underline">View on GitHub</a>
+                    <a href="https://market-place-8hq1.onrender.com/" class="ml-6 text-blue-500 hover:underline">Website</a>
+                </div>
             </div>
-        </div>
 
-        <!-- Project 3 -->
-        <div class="bg-white rounded-md overflow-hidden shadow-lg">
-            <a href="{% static 'store.png' %}" data-lightbox="project3" data-title="Project 3: Store API">
-                <img src="{% static 'store.png' %}" alt="Project 3" class="w-full h-48 object-cover">
-            </a>
-            <div class="p-6">
-                <h2 class="text-xl font-semibold mb-2">Project 3: Store API</h2>
-                <p class="text-gray-700 mb-4">Description of the project. Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-                <a href="https://github.com/karl0223/Python-Django-Part-3" class="text-blue-500 hover:underline">View on GitHub</a>
-                <a href="https://storefront-asnk.onrender.com/store/" class="ml-6 text-blue-500 hover:underline">Website</a>
+            <!-- Project 3 -->
+            <div class="project-container bg-white rounded-md overflow-hidden shadow-lg border border-gray-300">
+                <a href="{% static 'store.png' %}" data-lightbox="project3" data-title="Project 3: Store API">
+                    <img src="{% static 'store.png' %}" alt="Project 3" class="w-full h-48 object-cover">
+                </a>
+                <div class="p-6">
+                    <h2 class="text-xl font-semibold mb-2">Project 3: Store API</h2>
+                    <p class="text-gray-700 mb-4">Description of the project. Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                    <a href="https://github.com/karl0223/Python-Django-Part-3" class="text-blue-500 hover:underline">View on GitHub</a>
+                    <a href="https://storefront-asnk.onrender.com/store/" class="ml-6 text-blue-500 hover:underline">Website</a>
+                </div>
             </div>
+
+            <!-- Add more projects as needed -->
+
         </div>
+    </section>
 
-        <!-- Add more projects as needed -->
 
+    <!-- Contact Section -->
+    <section id="contact" class="container mx-auto my-8 p-8 bg-white shadow-md rounded-lg">
+        <h1 class="text-4xl font-bold mb-4 text-gray-800">Contact Me</h1>
+        <p class="text-gray-700 text-lg leading-relaxed">Feel free to reach out to me for any inquiries, collaboration opportunities, or just to say hello! You can contact me through the following channels:</p>
+        <ul class="list-disc pl-6 mt-4">
+            <li>Email: your.email@example.com</li>
+            <li>LinkedIn: <a href="https://www.linkedin.com/in/yourusername" class="text-blue-500 hover:underline">linkedin.com/in/yourusername</a></li>
+            <li>Twitter: <a href="https://twitter.com/yourusername" class="text-blue-500 hover:underline">@yourusername</a></li>
+        </ul>
     </section>
 
     <!-- Footer -->
