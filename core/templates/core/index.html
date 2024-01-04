@@ -8,6 +8,28 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
     <title>Karl Ducta - Portfolio</title>
+    <style>
+        .project-container {
+        transition: box-shadow 0.3s ease-in-out;
+        }
+
+        .project-container:hover {
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .project-container:hover {
+            transform: scale(1.1);
+        }
+
+        .contact-icon {
+            transition: box-shadow 0.3s ease-in-out; /* Add a smooth transition effect */
+        }
+
+        .contact-icon:hover {
+            transform: scale(1.1);
+            transition: transform 0.3s ease-in-out; /* Add a smooth transition effect */
+        }
+    </style>
 </head>
 
 <body class="bg-gray-100 font-sans text-gray-900">
@@ -34,10 +56,41 @@
 
     <!-- About Section -->
     <section id="about" class="container mx-auto my-8 p-8 bg-white shadow-md rounded-lg">
-        <h1 class="text-4xl font-bold mb-4">About Me</h1>
-        <p class="text-lg leading-relaxed">Hello, I'm Karl Ducta, a passionate software engineer based in [Your Location]. I specialize in [Your Specialization], and I have a strong background in [Your Skills]. My journey in the world of programming started [Mention a brief history or interesting fact about your journey].</p>
-        <p class="text-lg leading-relaxed">In addition to coding, I enjoy [Your Hobbies or Interests], and I am always eager to learn and explore new technologies. Feel free to connect with me on social media or through email. I'm open to collaboration and new opportunities.</p>
+        <h1 class="text-4xl font-bold mb-4 text-gray-800">About</h1>
+        <p class="text-gray-700 text-lg leading-relaxed">
+            I graduated from Cavite State University with a Bachelor's Degree in Computer Science. My passion lies in Software Development, and I'm enthusiastic about learning new things related to it. Beyond coding, I find joy in reading manga, manhwa, and manhua. I'm also an avid player of computer games.
+        </p>
+        <p class="text-gray-700 text-lg leading-relaxed">
+            I'm excited to connect with others who share similar interests and learn from their experiences. Whether it's discussing the latest in technology or sharing recommendations for a good read or game, I'm always up for engaging conversations.
+        </p>
     </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="container mx-auto my-8 p-8 bg-white shadow-md rounded-lg">
+        <h1 class="text-4xl font-bold mb-4 text-gray-800">Skills</h1>
+
+        <!-- List of skills with icons or text -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <div class="mb-4">
+                <i class="fas fa-code text-4xl text-gray-900 mb-2"></i>
+                <h2 class="text-xl font-semibold text-gray-800">Programming Languages</h2>
+                <p class="text-gray-700">Python, Node.js, JavaScript</p>
+            </div>
+
+            <div class="mb-4">
+                <i class="fas fa-laptop-code text-4xl text-gray-900 mb-2"></i>
+                <h2 class="text-xl font-semibold text-gray-800">Web Development</h2>
+                <p class="text-gray-700">HTML, CSS, Django, React</p>
+            </div>
+
+            <div class="mb-4">
+                <i class="fas fa-database text-4xl text-gray-900 mb-2"></i>
+                <h2 class="text-xl font-semibold text-gray-800">Databases</h2>
+                <p class="text-gray-700">PostgreSQL, MySQL, MongoDB</p>
+            </div>
+        </div>
+    </section>
+
 
     <!-- Projects Section -->
     <section id="projects" class="container mx-auto my-8 p-8 bg-white shadow-md rounded-lg">
@@ -95,28 +148,28 @@
             Feel free to reach out to me for any inquiries, collaboration opportunities, or just to say hello! You can contact me through the following channels:
         </p>
         <ul class="list-none pl-0 flex justify-center gap-8">
-            <li class="m-2">
-                <a href="mailto:your.email@example.com" class="text-gray-900 hover:underline">
+            <li class="m-2 contact-icon">
+                <a href="mailto:karlducta.dev@gmail.com" class="text-gray-900 hover:underline">
                     <i class="fas fa-envelope fa-3x"></i>
                 </a>
             </li>
-            <li class="m-2">
-                <a href="https://www.linkedin.com/in/yourusername" class="text-gray-900 hover:underline" target="_blank">
+            <li class="m-2 contact-icon">
+                <a href="https://www.linkedin.com/in/karl-ducta/" class="text-gray-900 hover:underline" target="_blank">
                     <i class="fab fa-linkedin fa-3x"></i>
                 </a>
             </li>
-            <li class="m-2">
+            <li class="m-2 contact-icon">
                 <a href="https://twitter.com/yourusername" class="text-gray-900 hover:underline" target="_blank">
                     <i class="fab fa-twitter fa-3x"></i>
                 </a>
             </li>
-            <li class="m-2">
-                <a href="https://facebook.com/yourusername" class="text-gray-900 hover:underline" target="_blank">
+            <li class="m-2 contact-icon">
+                <a href="https://www.facebook.com/KarlDucta/" class="text-gray-900 hover:underline" target="_blank">
                     <i class="fab fa-facebook fa-3x"></i>
                 </a>
             </li>
-            <li class="m-2">
-                <a href="https://github.com/yourusername" class="text-gray-900 hover:underline" target="_blank">
+            <li class="m-2 contact-icon">
+                <a href="https://github.com/karl0223" class="text-gray-900 hover:underline" target="_blank">
                     <i class="fab fa-github fa-3x"></i>
                 </a>
             </li>
